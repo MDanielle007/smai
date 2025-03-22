@@ -1,0 +1,30 @@
+# Global ignores
+*.log
+*.sqlite3
+.DS_Store
+node_modules/
+venv/
+.env
+
+# Ignore dependencies and build files for Vue.js frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.output/
+frontend/.env
+frontend/.env.local
+
+# Ignore dependencies and environment files for Django backend
+__pycache__
+migrations
+backend/db.sqlite3
+backend/media/
+backend/staticfiles/
+backend/static/
+backend/.env
+backend/.venv/
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+*.swp
