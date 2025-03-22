@@ -17,25 +17,6 @@
 
 	<!-- Login Form -->
 	<form class="my-8 space-y-6 w-full" @submit.prevent="handleSubmit">
-		<button
-			type="button"
-			@click="signInWithMicrosoft"
-			class="w-full bg-gray-900 dark:bg-gray-100 dark:text-gray-900 text-white py-2 rounded-lg flex items-center justify-center"
-		>
-			<span class="mr-2"
-				><svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-					<path fill="#f24f21" d="M4 4h10.7v10.7H4z"></path>
-					<path fill="#7fb900" d="M17.3 4H28v10.7H17.3z"></path>
-					<path fill="#00a3ee" d="M4 17.3h10.7V28H4z"></path>
-					<path fill="#ffb900" d="M17.3 17.3H28V28H17.3z"></path></svg
-			></span>
-			Sign in with Microsoft
-		</button>
-		<div class="flex items-center my-4">
-			<hr class="flex-grow border-gray-300" />
-			<span class="px-2 text-gray-500 dark:text-gray-300">or</span>
-			<hr class="flex-grow border-gray-300" />
-		</div>
 		<div>
 			<label class="block text-gray-700 dark:text-gray-400">Email address</label>
 			<IconField fluid>
@@ -60,6 +41,13 @@
 		>
 			Sign in
 		</button>
+		<div class="flex items-center justify-between mt-4">
+			<div class="text-sm">
+				<router-link :to="{name: 'register'}" class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">
+				Don't have an account yet? Sign up
+				</router-link>
+			</div>
+		</div>
 	</form>
 </template>
 <script>

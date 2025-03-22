@@ -199,7 +199,8 @@ const handleClickOutside = (event) => {
 }
 
 const handleLogout = async () => {
-	await logout()
+	await logout();
+	router.push({ name: 'login' })
 }
 
 onMounted(() => {
