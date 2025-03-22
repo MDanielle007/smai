@@ -66,8 +66,8 @@ const closeSidebar = () => {
 
 const menuItems = ref([
 	{
-		label: 'Home',
-		route: { name: 'home' },
+		label: 'Dashboard',
+		route: { name: 'dashboard' },
 		icon: 'pi pi-home',
 	},
 ])

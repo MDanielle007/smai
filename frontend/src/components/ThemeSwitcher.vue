@@ -4,7 +4,7 @@
 		class="inline-flex w-8 h-8 p-0 items-center justify-center surface-0 dark:surface-800 rounded"
 		@click="themeChange"
 	>
-		<i :class="`text-white pi ${iconClass}`" style="font-size: 1.5rem;" />
+		<i :class="`dark:text-white text-slate-900 pi ${iconClass}`" style="font-size: 1.5rem;" />
 	</button>
 </template>
 
